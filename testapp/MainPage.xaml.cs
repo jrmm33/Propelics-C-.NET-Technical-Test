@@ -72,13 +72,12 @@ namespace testapp
                         contentFrame.Navigate(typeof(Exercise4));
                         break;
 
-                        //case "Exercise4":
-                        //    contentFrame.Navigate(typeof(MessagePage));
-                        //    break;
-
-                        //case "Exercise5":
-                        //    contentFrame.Navigate(typeof(PrintPage));
-                        //    break;
+                    case "nav5":
+                        contentFrame.Navigate(typeof(Exercise5));
+                        break;
+                    case "nav6":
+                        contentFrame.Navigate(typeof(Exercise6));
+                        break;
                 }
             }
         }

@@ -39,6 +39,10 @@ namespace testapp.Views
         /// <returns>True or False</returns>
         public static bool AnagramCheck(string s1, string s2)
         {
+            // If length of the strings is different they are not Anagrams
+            if (s1.Length != s1.Length)
+                return false;
+
             //Set all charecters to lowercase
             s1 = s1.ToLower();
             s2 = s2.ToLower();
@@ -46,10 +50,6 @@ namespace testapp.Views
             // Remove white spaces 
             s1 = Regex.Replace(s1, @"\s+", "");
             s2 = Regex.Replace(s2, @"\s+", "");
-
-            // If length of the strings is different they are not Anagrams
-            if (s1.Length != s1.Length)
-                return false;
 
             // Sort the strings 
             s1 = String.Concat(s1.OrderBy(c => c));
@@ -95,6 +95,10 @@ namespace testapp.Views
             richTextBlock.TextWrapping = TextWrapping.Wrap;
             run.Text = @"public static bool AnagramCheck(string s1, string s2)
 {
+    // If length of the strings is different they are not Anagrams
+    if (s1.Length != s1.Length)
+        return false;
+
     //Set all charecters to lowercase
     s1 = s1.ToLower();
     s2 = s2.ToLower();
@@ -102,10 +106,6 @@ namespace testapp.Views
     // Remove white spaces 
     s1 = Regex.Replace(s1, @'\s + ', '');
     s2 = Regex.Replace(s2, @'\s+', '');
-
-    // If length of the strings is different they are not Anagrams
-    if (s1.Length != s1.Length)
-        return false;
 
     // Sort the strings 
     s1 = String.Concat(s1.OrderBy(c => c));
