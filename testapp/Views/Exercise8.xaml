@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="testapp.Views.Exercise6"
+    x:Class="testapp.Views.Exercise8"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:testapp.Views"
@@ -15,11 +15,11 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <TextBlock Name="tbExerciseTitle" Grid.Row="0">Exercise 6</TextBlock>
+            <TextBlock Name="tbExerciseTitle" Grid.Row="0">Exercise 8</TextBlock>
             <Grid Margin="20,30,20,0" Name="grdExercise" Grid.Row="1">
                 <TextBlock TextWrapping="Wrap" HorizontalAlignment="Stretch">
-                Write a function that reverses a string in a memory-efficient manner and without using the
-Enumerable.Reverse(IEnumerable(TSource)) extension method.
+                Write a function such that if an element in an MxN matrix is 0, its entire row and column are set
+to 0 and then printed out. E.g.
                 </TextBlock>
             </Grid>
             <Grid Margin="20,30,20,20" Name="grdResult" Grid.Row="2">
@@ -36,10 +36,11 @@ Enumerable.Reverse(IEnumerable(TSource)) extension method.
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <TextBlock Grid.Row="0">Write a Word or a frase:</TextBlock>
-                    <TextBox TextChanged="TxtString1_TextChanged" Name="txtString1" Height="30" Grid.Row="1"/>
-                    <TextBlock Name="tbActualResult" Grid.Row="4" Margin="10" Text="" ></TextBlock>
+                    <Button Click="TxtString1_Click" Content="Test" Name="txtString1" Height="30" Grid.Row="1"/>
+                    <TextBlock Name="tbOriginal" Grid.Row="4" Margin="10" Text="" ></TextBlock>
+                    <TextBlock Name="tbActualResult" Grid.Row="5" Margin="10" Text="" ></TextBlock>
                 </Grid>
             </Grid>
         </Grid>

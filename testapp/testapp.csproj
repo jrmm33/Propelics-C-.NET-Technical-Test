@@ -141,6 +141,12 @@
     <Compile Include="Views\Exercise6.xaml.cs">
       <DependentUpon>Exercise6.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Exercise7.xaml.cs">
+      <DependentUpon>Exercise7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Exercise8.xaml.cs">
+      <DependentUpon>Exercise8.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -188,6 +194,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Exercise6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Exercise7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Exercise8.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -18,7 +18,8 @@
             <TextBlock Name="tbExerciseTitle" Grid.Row="0">Exercise 5</TextBlock>
             <Grid Margin="20,30,20,0" Name="grdExercise" Grid.Row="1">
                 <TextBlock TextWrapping="Wrap" HorizontalAlignment="Stretch">
-                Write a function that, given two strings, test whether one is an anagram of the other.
+                Write a function to perform basic string compression using the counts of repeated characters;
+e.g. "aabcccccaaa" would become "a2b1c5a3". If the compressed string would not become smaller than the original string, just print the original string.
                 </TextBlock>
             </Grid>
             <Grid Margin="20,30,20,20" Name="grdResult" Grid.Row="2">

@@ -78,6 +78,12 @@ namespace testapp
                     case "nav6":
                         contentFrame.Navigate(typeof(Exercise6));
                         break;
+                    case "nav7":
+                        contentFrame.Navigate(typeof(Exercise7));
+                        break;
+                    case "nav8":
+                        contentFrame.Navigate(typeof(Exercise8));
+                        break;
                 }
             }
         }

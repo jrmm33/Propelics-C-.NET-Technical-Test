@@ -36,6 +36,12 @@
                 <NavigationViewItem Icon="Like" Tag="Exercise_6" >
                     <TextBlock Tag="nav6">Exercise 6</TextBlock>
                 </NavigationViewItem>
+                <NavigationViewItem Icon="Like" Tag="Exercise_7" >
+                    <TextBlock Tag="nav7">Exercise 7</TextBlock>
+                </NavigationViewItem>
+                <NavigationViewItem Icon="Dislike" Tag="Exercise_8" >
+                    <TextBlock Tag="nav8">Exercise 8</TextBlock>
+                </NavigationViewItem>
             </NavigationView.MenuItems>
             <Frame x:Name="contentFrame"></Frame>
         </NavigationView>

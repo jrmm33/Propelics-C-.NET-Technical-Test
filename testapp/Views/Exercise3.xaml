@@ -18,9 +18,10 @@
             <TextBlock Name="tbExerciseTitle" Grid.Row="0">Exercise 3</TextBlock>
             <Grid Margin="20,30,20,0" Name="grdExercise" Grid.Row="1">
                 <TextBlock TextWrapping="Wrap" HorizontalAlignment="Stretch">
-                Write a function that Print numbers from 1 to 200 and every time a number is divisible by 3,
-print the word "fizz" instead of the number; every time the number is divisible by 5 print the
-number "buzz" and every time the number is divisible by both (3 and 5) print the word "fizzbuzz".
+                Write a function that takes a string containing a number in base X along with and integer of base
+X. The function must return the integer value of that string/base pair.
+ E.g., int Convert.ToInt32(string number, int base);
+ Do NOT use .NET Framework’s Convert.ToInt32 or similar
                 </TextBlock>
             </Grid>
             <Grid Margin="20,30,20,20" Name="grdResult" Grid.Row="2">
